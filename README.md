@@ -1,1 +1,2 @@
 # talking-faces
+This repository contains a minimal working example of the method described in our paper "Geometric Constraint and Multimodal Prompt Guided Realistic Talking Face Generation" submitted to The Visual Computer. The full codebase, including training scripts and comprehensive documentation, will be made publicly available upon paper acceptance. If you are interested in further details, please follow The Visual Computer.
