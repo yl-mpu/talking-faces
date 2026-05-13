@@ -1,0 +1,9 @@
+clip_len_second: 30 
+video_root_raw: "./datasets/CREMA/source/video" 
+
+video_root_25fps: "./datasets/CREAMA/video_root_25fps/"
+video_file_list: "./datasets/CREAMA/video_file_list.txt"
+video_audio_clip_root:  "./datasets/CREAMA/video_audio_clip_root/"
+video_file_list_train: "./datasets/CREAMA/train.txt"
+video_file_list_val: "./datasets/CREAMA/val.txt"
+video_file_list_test: "./datasets/CREAMA/test.txt"
