@@ -1,0 +1,37 @@
+# data
+data_dir: ./datasets/CREMA/ # CREMA, LRW_full_size, avspeech, vox
+identity_frame: random # random or first
+img_resize: 128
+sample_rate: 16000
+stage: 1
+margin_values: [5, 5]
+jaw2edge_margin_mean: 10
+jaw2edge_margin_std: 10
+
+# training
+input_dim: 768
+hid_dim: 128
+land_dim: 68
+upper_dim: 37
+mouth_dim: 20
+num_frame: 25
+
+num_layers: 1
+num_attention_heads: 2
+feed_forward_expansion_factor: 2
+expansion_factor: 2
+input_dropout: 0.1
+decoder_dropout: 0.2
+feed_forward_dropout: 0.2
+conv_dropout: 0.2
+conv_kernel_size: 3
+half_step_residual: True
+lweight: {'f_w': 0.2, 'm_w': 0.8}
+
+checkpoint: null
+precision: 32
+n_epochs: 300
+n_workers: 1
+n_nodes: 1
+lr: 1e-4
+bsz: 128
