@@ -1,0 +1,25 @@
+# data
+data_dir: ./datasets/CREMA/ # CREMA
+img_resize: 128
+sample_rate: 16000
+margin_values: [5, 5]
+jaw2edge_margin_mean: 10
+jaw2edge_margin_std: 10
+
+# training
+in_channels: [168]
+hid_channels: [512, 256, 512]
+out_channels: [512, 256, 128, 64, 64]
+
+enc_ckpt: ./weights/img_enc.pt
+dec_ckpt: ./weights/img_dec.pt
+
+land_ckpt: ./weights/land_geometer.ckpt
+emo_ckpt: ./weights/emo_geometer.ckpt
+weights: {'p_w': 1., 'g_w': 100.}
+
+checkpoint: null
+precision: 32
+n_epochs: 200
+lr: 1e-4
+bsz: 4
